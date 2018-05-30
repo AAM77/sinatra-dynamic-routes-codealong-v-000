@@ -18,6 +18,12 @@ class App < Sinatra::Base
     "Goodbye, #{@user_name}."
   end
 
+  get "/mutiply" do
+    @num_1 = params[:num_1]
+    @num_2 = params[:num_2]
+    product = @num_1 * @num_2
+    product
+
 
 
   # Code your final two routes here:
